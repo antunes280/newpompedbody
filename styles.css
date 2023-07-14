@@ -90,15 +90,22 @@ video {
 
   
   .botao-personalizado {
-    background-color: #00ff08; /* Cor de fundo do botão */
-    border: none; /* Remove a borda */
-    color: white; /* Cor do texto */
-    padding: 10px 10px; /* Espaçamento interno do botão */
-    text-align: center; /* Alinhamento do texto */
-    text-decoration: none; /* Remove sublinhado do texto */
-    display: inline-block; /* Exibe como bloco inline */
-    font-size: 26px; /* Tamanho da fonte */
-    border-radius: 4px; /* Arredonda as bordas */
-    cursor: pointer; /* Altera o cursor ao passar por cima */
-    margin-left: 190px; /* Adiciona uma margem à esquerda */
+    background-color: #00ff08;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw; /* Tamanho da fonte em relação à largura da viewport */
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10%; /* Adiciona uma margem à esquerda */
+}
+
+@media screen and (max-width: 600px) {
+    .botao-personalizado {
+        font-size: 16px; /* Tamanho da fonte para telas menores */
+        margin-left: 0; /* Remove a margem à esquerda para telas menores */
+    }
 }
